@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ahmed's Fishing Adventures</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f8ff;
+      }
+      header {
+        background-color: #008cba;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+      }
+      nav {
+        background-color: #005f6a;
+        padding: 0.5rem;
+        text-align: center;
+      }
+      nav a {
+        color: white;
+        margin: 0 1rem;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      main {
+        padding: 2rem;
+      }
+      section {
+        margin-bottom: 2rem;
+      }
+      footer {
+        background-color: #005f6a;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1rem;
+      }
+
+      .gallery figure {
+        width: 30%;
+        text-align: center;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+
+      .image-1 {
+        width: 300px;
+        height: 200px;
+      }
+
+      .image-2 {
+        width: 800px;
+        height: 600px;
+      }
+
+      .image-3 {
+        width: 500px;
+        height: 300px;
+      }
+
+      .gallery figcaption {
+        margin-top: 0.5rem;
+        font-style: italic;
+      }
+
+      #feedback {
+        margin-top: 1rem;
+        display: none;
+        color: green;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Ahmed's Fishing Adventures</h1>
+      <p>Sharing my passion for fishing with the world!</p>
+    </header>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hi! I'm Ahmed, and fishing has been my favorite hobby for years. I
+          love exploring new fishing spots, learning new techniques, and sharing
+          my catches with friends and family. Join me as I document my
+          adventures and share tips for fellow fishing enthusiasts!
+        </p>
+      </section>
+
+      <section id="gallery">
+        <h2>Gallery</h2>
+        <nav>
+          <a href="#best_fishing_day">Best Fishing Day</a>
+          <a href="#saltwater">best catches</a>
+          <a href="#gear">Fishing Gear</a>
+        </nav>
+
+        <section id="best_fishing_day">
+          <h3>Best Fishing Day</h3>
+          <div class="gallery">
+            <figure>
+              <img
+                src="best_fishing_day.jpeg"
+                alt="Best Fishing Day"
+                class="image-1"
+              />
+              <figcaption>The perfect day on the water!</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="saltwater">
+          <h3>best catches</h3>
+          <div class="gallery">
+            <figure>
+              <img
+                src="a_rare_fish.jpeg"
+                alt="Saltwater Spot 1"
+                class="image-1"
+              />
+              <figcaption>
+                not a big weighted fish but a good size of the most rare fish in
+                the water
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="biggest_fish_ever.jpeg"
+                alt="Saltwater Catch 1"
+                class="image-2"
+              />
+              <figcaption>my biggest fish ever it weighted 14 KGs</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="gear">
+          <h3>Fishing Gear</h3>
+          <div class="gallery">
+            <figure>
+              <img
+                src="new_fishing_setup.jpeg"
+                alt="Fishing Rod"
+                class="image-2"
+              />
+              <figcaption>
+                this was the first try of my new fishing setup with a Carbon
+                fibre Rod
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+          If you'd like to connect, share your fishing stories, or ask for
+          advice, feel free to email me at
+          <a href="mailto:ahmedelbardicy18@gmail.com"
+            >ahmedelbardicy18@gmail.com</a
+          >.
+        </p>
+        <button id="feedbackButton">Send Feedback</button>
+        <p id="feedback">Thank you for your feedback!</p>
+      </section>
+    </main>
+
+    <script>
+      document
+        .getElementById("feedbackButton")
+        .addEventListener("click", function () {
+          document.getElementById("feedback").style.display = "block";
+        });
+    </script>
+  </body>
+</html>
